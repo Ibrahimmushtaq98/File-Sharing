@@ -1,7 +1,4 @@
-# CSCI 2020U Assignment Two
-
-https://github.com/Colin-Orian/CSCI_2020U_AssignTwon.git
-
+# File Sharing Server
 Group Members:
 
 Colin Orian
