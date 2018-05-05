@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Controller">
+
+   <children>
+
+      <Button fx:id="uploadBtn" layoutX="37.0" layoutY="30.0" mnemonicParsing="false" onAction="#uploadAction" text="Upload" />
+
+      <Button fx:id="downloadBtn" layoutX="115.0" layoutY="30.0" mnemonicParsing="false" onAction="#downloadAction" text="Download" />
+
+      <SplitPane dividerPositions="0.5" layoutX="24.0" layoutY="92.0" prefHeight="385.0" prefWidth="453.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="clientList" prefHeight="383.0" prefWidth="221.0" />
+               </children>
+            </AnchorPane>
+
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+
+               <children>
+                  <ListView fx:id="serverList" prefHeight="383.0" prefWidth="221.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="24.0" layoutY="76.0" text="Client List" />
+      <Label layoutX="251.0" layoutY="76.0" text="Server List" />
+      <Button fx:id="chooseDir" layoutX="346.0" layoutY="500.0" mnemonicParsing="false" onAction="#setChooseDir" text="Choose Directory" />
+      <Button fx:id="startConnect" layoutX="371.0" layoutY="535.0" mnemonicParsing="false" onAction="#setStartConnect" text="CONNECT" />
+      <Label layoutX="24.0" layoutY="505.0" text="Choose Directory" />
+      <Label layoutX="27.0" layoutY="540.0" text="Enter IP Address" />
+      <TextField fx:id="direOut" layoutX="150.0" layoutY="500.0" />
+      <TextField fx:id="ipAddIN" layoutX="150.0" layoutY="535.0" />
+      <Button fx:id="refresh" layoutX="386.0" layoutY="30.0" mnemonicParsing="false" onAction="#refreshList" text="Refresh" />
+   </children>
+</AnchorPane>

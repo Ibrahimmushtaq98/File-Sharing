@@ -1,0 +1,8 @@
+/out/
+\.idea/artifacts/Client\.xml
+
+\.idea/artifacts/JavaFXApp\.xml
+
+\.idea/artifacts/Server\.xml
+
+*.MF
