@@ -2,10 +2,8 @@
 Group Members:
 
 Colin Orian
-100622430
 
 Ibrahim Mushtaq
-100620409
 
 ### Program Description: A client-server file sharing program.
 
